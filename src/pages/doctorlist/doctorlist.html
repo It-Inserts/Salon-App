@@ -1,0 +1,36 @@
+<ion-header align-title="center">
+    <ion-navbar color="dark">
+        <button item-start ion-button icon-only color="white" menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Services</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content center>
+    <ion-grid class="container">
+        <ion-title>
+            <div class="title-heading">Book Appoinment</div>
+        </ion-title>
+        <div class="loader_row row" id="loader_row">
+            <div class="col" style="text-align: center" id="loader_col">
+                <ion-spinner class="spinner" name="crescent" id="loader"></ion-spinner>
+            </div>
+        </div>
+
+
+        <ion-row class="media-object" *ngFor="let service of serviceList" attr.id="service{{service.id}}" (click)="selectService(service)">
+            <ion-row col-12 class="doctor-detail">
+                <ion-col col-3 class="img">
+                    <img src="{{service.service_image}}" alt="assets/image/service.png"/>
+                </ion-col>
+                <ion-col col-9 class="detail">
+                    <div class="row doctor_name">{{service.name}}</div>
+                    <div class="row price">{{service.price}} , {{service.point}} Points</div>
+                </ion-col>
+
+            </ion-row>
+        </ion-row>
+    </ion-grid>
+</ion-content>

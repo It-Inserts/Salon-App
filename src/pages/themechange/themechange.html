@@ -1,0 +1,24 @@
+<ion-header align-title="center">
+    <ion-navbar>
+        <button item-start ion-button icon-only color="white" menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Theme Change</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item class="select">
+        <ion-label>Select Theme</ion-label>
+        <ion-select [(ngModel)]="theamvalue">
+            <ion-option value="dark-theme">Dark Theam</ion-option>
+            <ion-option value="light-theme">Light Theam</ion-option>
+            <ion-option value="green-theme">Green Theam</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <button ion-button full icon-left (click)="toggleAppTheme(theamvalue)" class="btnchangetheme">
+        <ion-icon name="bulb"></ion-icon>
+        Change Theme
+    </button>
+</ion-content>

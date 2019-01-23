@@ -1,0 +1,115 @@
+page-doctor {
+    .scroll-content {
+        background: #000;
+    }
+    .toolbar-title-ios {
+        margin-top: 10px;
+        color: white;
+    }
+    .toolbar-background.toolbar-background-ios {
+        background: #00cbe9;
+        border: none;
+        color: white;
+    }
+    .scroll-content {
+        background: -moz-linear-gradient(top, #00cbe9 1%, #05dec1 100%);
+        background: -webkit-linear-gradient(top, #00cbe9 1%, #05dec1 100%);
+        background: linear-gradient(to Bottom, #00cbe9 1%, #05dec1 100%);
+    }
+    .container {
+        .slider {
+            .slide {
+                .slide_content {
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    background: #fff;
+                    border: 1px solid #fff;
+                    border-radius: 14px;
+                    .img_row {
+                        .img_col {
+                            height: 80px;
+                            width: 80px;
+                            img {
+                                height: 80px;
+                                width: 80px;
+                                border-radius: 50%;
+                            }
+                        }
+                    }
+                    .dr_name_row {
+                        .dr_name_col {
+                            p {
+                                margin: 0px;
+                                padding: 0px;
+                            }
+                        }
+                    }
+                    .dr_name_row {
+                        .rating_col {
+                            .icon1 {
+                                color: #ffde0d;
+                            }
+                            .icon2 {
+                                color: #ffde0d;
+                            }
+                            .icon3 {
+                                color: #ffde0d;
+                            }
+                            .icon4 {
+                                color: #ffde0d;
+                            }
+                            .icon5 {
+                                // color: #ffde0d;
+                            }
+                        }
+                    }
+                    .timing_fees {
+                        background: #f7f9fb;
+                        .timing {
+                            border-right: 1px solid #dddfe0;
+                        }
+                    }
+                    .doctor_label {
+                        padding-top: 10px !important;
+                        .doctor_label_col {
+                            label {
+                                color: #67889f;
+                            }
+                        }
+                    }
+                    .doctor_detail {
+                        p {
+                            margin-top: 5px;
+                            margin-left: 10px;
+                            margin-right: 10px;
+                        }
+                    }
+                    .address {
+                        margin-left: 10px;
+                        margin-right: 10px; // height: 44px;
+                        border-top: 1px solid #dddfe0;
+                        border-bottom: 1px solid #dddfe0;
+                        .address_text {
+                            font-size: large;
+                            text-align: left;
+                            margin: 0px;
+                            overflow-x: hidden;
+                        }
+                        .navigation_icon {
+                            color: #37d1ed;
+                            font-size: large;
+                        }
+                    }
+                    .btn_row {
+                        .btn_col {
+                            .btn {
+                                background-color: #00cbe9;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

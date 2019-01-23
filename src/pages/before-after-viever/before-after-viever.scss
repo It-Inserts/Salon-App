@@ -1,0 +1,25 @@
+page-before-after-viever {
+    .content {
+        background: #ffffffe0;
+    }
+    .img {
+        width: 100%;
+    }
+    .asd {
+        font-size: 30px;
+        margin: 0;
+        padding: 10px 0 0 10px;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        .ico {
+            $d: 35px;
+            height: $d;
+            text-align: center;
+            width: $d;
+            border-radius: 50%;
+            background: #000;
+            color: #fff;
+        }
+    }
+}

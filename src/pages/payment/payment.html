@@ -1,0 +1,42 @@
+<ion-header align-title="center">
+    <ion-navbar>
+        <ion-title>Payment</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="payment">
+    <ion-grid class="top-padding">
+        <ion-row>
+            <ion-col col-6>
+                <button class="btn-option" ion-button color="light" [ngClass]="{'active': btncreditcard == true}"
+                        (click)="activemethod('credit')">
+                    <div *ngIf="btncreditcard" class="main-circle">
+                        <p class="circle"></p>
+                    </div>
+                    pay locally
+                </button>
+            </ion-col>
+            <ion-col col-6>
+                <button class="btn-option" ion-button color="light" [ngClass]="{'active': btnpaypal == true}"
+                        (click)="activemethod('paypal')">
+                    <div *ngIf="btnpaypal" class="main-circle">
+                        <p class="circle"></p>
+                    </div>
+                    Pay with Paypal
+                </button>
+            </ion-col>
+        </ion-row>
+        <ion-row *ngIf="btncreditcard">
+                <ion-card class="top-padding">
+                    <p class="textdata">You select payment method is cash on spot</p>
+                </ion-card>
+            <button ion-button color="dark" class="btn-submit top-padding" round (click)="submit()">Submit</button>
+        </ion-row>
+        <ion-row *ngIf="btnpaypal">
+            <ion-card class="top-padding">
+                <p ion-item>You select payment method is PayPal</p>
+            </ion-card>
+            <button ion-button color="dark" class="btn-submit top-padding" (click)="paypal()" round>Submit</button>
+        </ion-row>
+    </ion-grid>
+</ion-content>

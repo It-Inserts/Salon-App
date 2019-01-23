@@ -1,0 +1,17 @@
+<ion-content>
+  <p class="asd" (click)="leaveview()">
+    <ion-icon class="ico" name="close"></ion-icon>
+  </p>
+  <ion-slides autoplay="500" speed="500">
+    <ion-slide>
+
+      <img src="{{data.before_image}}" class="img">
+      <h1>before the service</h1>
+    </ion-slide>
+    <ion-slide>
+
+      <img src="{{data.after_image}}" class="img">
+      <h1>after the service</h1>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

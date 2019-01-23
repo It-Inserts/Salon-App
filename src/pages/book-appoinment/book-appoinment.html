@@ -1,0 +1,42 @@
+<ion-header align-title="center">
+    <ion-navbar>
+        <button item-start ion-button icon-only color="white" menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Book Appoinment</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="container">
+    <div class="date_block">
+        <ion-item>
+            <ion-label>SELECT DATE</ion-label>
+            <ion-datetime displayFormat="DD/MM/YYYY" (ionChange)="selecteDateFunction()" min="{{today}}"
+                          max="2050-10-31" [(ngModel)]="myDate">
+            </ion-datetime>
+        </ion-item>
+    </div>
+    <div id="loader" style="text-align: center">
+        <ion-spinner class="spinner" name="crescent"></ion-spinner>
+    </div>
+
+    <div class="time_block">
+        <ion-grid class="time_block_grid">
+            <ion-row>
+                <div class="time_title">
+                    SELECT TIME
+                </div>
+            </ion-row>
+            <div class="container_new">
+                <div *ngFor="let cs of currentTimeSlote" [className]="cs.status" (click)="bookTimeslote(cs)">
+                    {{cs.time}}
+                </div>
+            </div>
+        </ion-grid>
+    </div>
+
+    <div class="error_popup">
+        <p>{{error}}</p>
+        <span (click)="dismissPopup()">OK</span>
+    </div>
+</ion-content>

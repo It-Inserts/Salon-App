@@ -1,0 +1,113 @@
+page-appoinment-detail {
+  background: rgba(255, 255, 255, 0.77);
+  .ion_content {
+    position: absolute;
+    height: 331px;
+    top: 20%;
+    margin: 10px;
+    width: 95%;
+    .btn_row {
+      .btn_col {
+        color: #016ef0;
+        text-align: center;
+        button {
+          height: 44px;
+          width: 44px;
+          border-radius: 50%;
+        }
+      }
+    }
+    .time_block {
+      .row {
+        background: #000;
+        border-radius: 14px 10px 0 0;
+        .col {
+          padding: 0;
+          text-align: center;
+          color: #fff;
+          padding-top: 10px;
+          .date_col {
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+            margin: 35px;
+            border-radius: 50%;
+            background: #fff;
+            color: #000;
+            overflow-y: auto;
+            font-size: large;
+          }
+          .appo_time {
+            padding-top: 10px;
+            font-size: large;
+          }
+        }
+      }
+    }
+    .serviceNameRow {
+      .serviceNameCol {
+        margin: 10px 0;
+        .servicename {
+          text-align: center;
+          font-size: large;
+          font-weight: 900;
+        }
+        .point {
+          text-align: center;
+          font-size: 20px;
+          color: #000;
+        }
+      }
+    }
+  }
+  .button-ios {
+    background: #000;
+  }
+  .final_popup {
+    .final_popup_inner {
+      .final_popup_sign {
+        width: 100px;
+        height: 100px;
+        background: #000;
+        border-radius: 50%;
+        margin: auto; // position: absolute;
+        // left: 50%;
+        // transform: translate(-50%,0%);
+        span {
+          // background: url(assets/images/check-mark.png) no-repeat center center;
+          // width: 50px;
+          // height: 50px;
+          // display: block;
+          // margin: 25px auto;
+          display: block;
+          text-align: center;
+          padding: 25px;
+        }
+      }
+      .final_popup_sec {
+        .final_popup_msg {
+          font-size: 30px;
+        }
+        p {
+          margin: 0px 0px 15px 0px;
+          text-align: center;
+          font-size: 20px;
+        }
+        .final_okbtn {
+          display: block;
+          width: 95%;
+          margin: auto;
+          padding: 20px;
+          text-align: center;
+          text-decoration: none;
+          color: #fff;
+          font-size: 24px;
+          line-height: 26px;
+          background: #000;
+          border-radius: 5px;
+          font-family: 'Quicksand', sans-serif !important;
+        }
+      }
+    }
+  }
+}

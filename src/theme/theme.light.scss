@@ -1,0 +1,20 @@
+.light-theme {
+  ion-content {
+    background-color:lightyellow;
+    color: #fff;
+    .button{
+      background-color: #488aff;
+      color: white;
+    }
+  }
+
+  .toolbar-title {
+    color: #fff;
+  }
+
+  .header .toolbar-background {
+    border-color: #ff0fff;
+    background-color: #7c87cf;
+  }
+
+}

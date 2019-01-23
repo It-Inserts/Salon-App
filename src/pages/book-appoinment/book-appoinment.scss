@@ -1,0 +1,219 @@
+page-book-appoinment {
+    .dateandtime {
+        background: #fff;
+    }
+    .disable {
+        margin: 0px 10px 0px 0px;
+        height: 40px;
+        font-size: 17px;
+        padding: 10px 0px 10px 0px;
+        text-align: center;
+        border-radius: 10px;
+        background: lightgray;
+        border: 1px solid #fff;
+        width: calc(100% / 1);
+        margin-bottom: 5px;
+    }
+    .enable {
+        margin: 0px 10px 0px 0px;
+        height: 40px;
+        font-size: 17px;
+        line-height: 17px;
+        padding: 10px 0px 10px 0px;
+        text-align: center;
+        width: calc(100% / 1);
+        border-radius: 10px;
+        border: 1px solid #fff;
+        color: #000;
+        border: 1px solid #cec9c9;
+        margin-bottom: 5px;
+        box-shadow: 3px 1px 10px 2px #ededed, 3px 1px 10px 2px #ededed;
+    }
+    .spinner {
+        top: 100px;
+    }
+    .spinner-crescent circle {
+        fill: transparent;
+        stroke-width: 4px;
+        stroke-dasharray: 128px;
+        stroke-dashoffset: 82px;
+        stroke: #888;
+    }
+    ion-spinner svg {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        color: #888;
+    }
+    .date_picker::-webkit-scrollbar {
+        border: none;
+        width: 0;
+        background: rgba(0, 0, 0, 0);
+    }
+    .date_picker::-webkit-scrollbar-track {
+        border: none;
+        width: 0;
+        background: rgba(0, 0, 0, 0);
+    }
+    .date_picker::-webkit-scrollbar-thumb {
+        border: none;
+        width: 0;
+        background: rgba(0, 0, 0, 0);
+    }
+    .date_picker {
+        ion-scroll[scrollX] {
+            white-space: nowrap;
+            .scroll-item {
+                display: inline-block;
+            }
+        }
+    }
+    /* do not change*/
+    .container {
+        overflow-y: hidden;
+        .date_block {
+            /*position: absolute;*/
+            width: 100%;
+            border: 1px solid #fff;
+            color: #fff;
+            background: $theamBackground;
+            .date_title {
+                padding-left: 10px;
+                height: 40px;
+                font-size: 20px;
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+            .date_picker {
+                height: 60px;
+                .scroll-x {
+                    width: 100%;
+                    .scroll-content {
+                        width: 100%;
+                        height: 60px;
+                        .scroll-zoom-wrapper {
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                }
+                .scroll-item {
+                    display: inline-block;
+                    color: black;
+                    width: 100%;
+                    height: 60px;
+                    border: 1px solid lightgray;
+                    text-align: center;
+                    font-size: 20px;
+                    background: #fff;
+                }
+            }
+        }
+        .time_block {
+            margin-top: 15px;
+            .time_block_grid {
+                color: #000;
+                overflow-y: scroll;
+                margin-top: 10px;
+                .time_title {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+                .container_new {
+                    -webkit-column-count: 3;
+                    -moz-column-count: 3;
+                    column-count: 3;
+                    padding: 10px 0;
+                    -webkit-column-gap: .5rem;
+                    -moz-column-gap: .5rem;
+                    column-gap: .5rem;
+                    .Time_slote_block_left {
+                        margin-bottom: 5px;
+                        height: 40px;
+                        font-size: 17px;
+                        padding: 10px 0px 10px 0px;
+                        text-align: center;
+                        width: calc(100% / 1);
+                        border-radius: 10px;
+                        border: 1px solid #fff;
+                        background: #e8e8e8;
+                        color: #000;
+                    }
+                }
+                .Time_slote_row {
+                    margin: 5px 0px 5px 0px;
+                    .Time_slote_block_left {
+                        margin: 0px 10px 0px 0px;
+                        height: 40px;
+                        font-size: 17px;
+                        padding: 10px 0px 10px 0px;
+                        text-align: center;
+                        width: 100%;
+                        border-radius: 10px;
+                        border: 1px solid #fff;
+                        background: #e8e8e8;
+                        color: #000;
+                    }
+                    .Time_slote_block_center {
+                        margin: 0px 10px 0px 0px;
+                        height: 40px;
+                        font-size: 17px;
+                        padding: 10px 0px 10px 0px;
+                        width: 100%;
+                        text-align: center;
+                        border-radius: 10px;
+                        border: 1px solid #fff;
+                    }
+                    .Time_slote_block_right {
+                        height: 40px;
+                        text-align: center;
+                        font-size: 17px;
+                        padding: 10px 0px 10px 0px;
+                        width: 100%;
+                        border-radius: 10px;
+                        border: 1px solid #fff;
+                    }
+                }
+            }
+        }
+    }
+    .error_popup {
+        display: none;
+        background: #ffffff;
+        padding: 15px;
+        width: 300px;
+        margin: auto;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        box-shadow: 1px 1px 10px 1px black;
+        p {
+            color: #000000;
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0px;
+            text-align: center;
+            &:after {
+                content: '';
+                border-bottom: 2px solid grey;
+                display: block;
+                margin: 10px 0px;
+            }
+        }
+        span {
+            display: block;
+            text-align: center;
+            color: blue;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+    .loading {
+        .spinner-crescent circle {
+            stroke: #888 !important;
+        }
+    }
+}

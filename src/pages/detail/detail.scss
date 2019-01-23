@@ -1,0 +1,65 @@
+page-detail {
+    .scroll-content {
+        background: #000;
+    }
+    .container {
+        background: $theamBackground;
+        padding: 0px;
+        margin: 0px;
+        .user_image_row {
+            border-bottom: 0.55px solid #c8c7cc;
+            .user_image_content {
+                .row {
+                    .user_profile_img {
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        text-align: center;
+                        img {
+                            padding: 10px;
+                            width: 69px;
+                            height: 69px;
+                            max-width: 100%;
+                            background: #e7e2e2;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+        .form_fild {
+            .single_fild {
+                background: $theamBackground;
+                color: #fff;
+                padding: 0px;
+                .input_label {
+                    padding-left: 5px;
+                    font-size: 20px;
+                    color: #9D9A9A;
+                }
+                .text_input {
+                    padding-left: 5px;
+                    font-size: 20px;
+                }
+                .date-time {
+                    padding-top: 15px;
+                }
+                .date-time-label {
+                    margin-top: 0px;
+                }
+            }
+        }
+        .submit_btn_row {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            .submit_btn_col {
+                .submit_btn {
+                    margin-left: 10%;
+                    width: 80%;
+                    height: 44px;
+                    background: #fff;
+                    color: #000;
+                }
+            }
+        }
+    }
+}

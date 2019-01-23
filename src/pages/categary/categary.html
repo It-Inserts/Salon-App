@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-navbar>
+        <button item-start ion-button icon-only color="white" menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Categary</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content CategaryPage>
+    <ion-grid justify-content-center align-items-center class="container" id="grid_container">
+        <ion-row class="loader_row" id="loader_row">
+            <ion-col class="loader_col" id="loader_col" style="text-align: center">
+                <ion-spinner class="spinner" name="crescent" id="loader"></ion-spinner>
+            </ion-col>
+        </ion-row>
+        <div class="tile_panel">
+            <div class="pin left_tile" *ngFor="let d of data" (click)="select_categary(d)">
+                <img src="{{d.category_image}}" class="img" imageViewer alt="assets/image/category.png"/>
+                <p>
+                    {{d.category}}
+                </p>
+            </div>
+        </div>
+    </ion-grid>
+</ion-content>

@@ -1,0 +1,23 @@
+.green-theme {
+  ion-content {
+    background-color:darkseagreen;
+    color: #fff;
+    .button{
+      background-color: #fbb6b6;
+      color: white;
+    }
+    .label{
+      color: #2d2d2d;
+    }
+  }
+
+  .toolbar-title {
+    color: #fff;
+  }
+
+  .header .toolbar-background {
+    border-color: #ff0fff;
+    background-color: #25b325;
+  }
+
+}

@@ -1,0 +1,73 @@
+<ion-header>
+
+    <ion-navbar>
+        <button item-start ion-button icon-only color="white" menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>detail</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid class="container">
+        <ion-row class="user_image_row">
+            <ion-col class="user_image_content">
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col user_profile_img">
+                        <img src="./assets/icon/man-user.png">
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </ion-col>
+        </ion-row>
+        <ion-row class="form_fild">
+            <ion-item class="single_fild">
+                <ion-label floating class="input_label">Name</ion-label>
+                <ion-input type="text" class="text_input">{{userData}}</ion-input>
+            </ion-item>
+        </ion-row>
+
+        <ion-row class="form_fild">
+            <ion-item class="single_fild">
+                <ion-label floating class="input_label">Email</ion-label>
+                <ion-input type="text" class="text_input"></ion-input>
+            </ion-item>
+        </ion-row>
+
+        <ion-row class="form_fild">
+            <ion-item class="single_fild">
+                <ion-label floating class="input_label">Phone</ion-label>
+                <ion-input type="text" class="text_input"></ion-input>
+            </ion-item>
+        </ion-row>
+
+
+        <ion-row class="form_fild">
+            <ion-item class="single_fild">
+                <ion-label floating class="input_label date-time-label">Selected Date</ion-label>
+                <ion-input type="date" class="text_input date-time"></ion-input>
+            </ion-item>
+        </ion-row>
+
+        <ion-row class="form_fild">
+            <ion-item class="single_fild">
+                <ion-label floating class="input_label date-time-label">Selected Time</ion-label>
+                <ion-input type="time" class="text_input date-time"></ion-input>
+            </ion-item>
+        </ion-row>
+
+        <ion-row class="form_fild">
+            <ion-item class="single_fild">
+                <ion-label floating class="input_label">Bio</ion-label>
+                <ion-input type="text" class="text_input"></ion-input>
+            </ion-item>
+        </ion-row>
+
+        <ion-row class="submit_btn_row">
+            <ion-col class="submit_btn_col">
+                <button ion-button round default class="submit_btn">Submit</button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

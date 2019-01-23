@@ -1,0 +1,8 @@
+{
+  "name": "token",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "id": "d0b1e925"
+}

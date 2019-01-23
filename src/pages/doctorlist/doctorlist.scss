@@ -1,0 +1,100 @@
+page-doctorlist {
+    .toolbar-background-ios {
+        background: #fff;
+        border: none;
+    }
+    .spinner {
+        top: 50px;
+    }
+    .spinner-crescent circle {
+        fill: transparent;
+        stroke-width: 4px;
+        stroke-dasharray: 128px;
+        stroke-dashoffset: 82px;
+        stroke: #888;
+    }
+    ion-spinner svg {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        color: #888;
+    }
+    .title-heading {
+        color: #888;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+    }
+    .scroll-content {
+        .container {
+            margin-top: 2px;
+            color: #fff;
+            .media-object {
+                margin-right: 6px;
+                margin-left: 6px;
+                box-shadow: 0 0 21px rgba(0, 0, 0, 0.4);
+                border-radius: 5px;
+                border: 1px solid #fff;
+                margin-bottom: 10px;
+                .doctor-detail {
+                    padding-bottom: 0px;
+                    .img {
+                        padding-bottom: none;
+                        text-align: center;
+                        img {
+                            min-height: 78px;
+                        }
+                    }
+                    .detail {
+                        padding-left: 10px; // padding-top: 3%;
+                        .doctor_name {
+                            color: #030303;
+                            font-size: 20px;
+                            font-weight: 100; // padding-bottom: 5px;
+                        }
+                        .qualification {
+                            color: #626262;
+                            font-size: 14px;
+                            padding-bottom: 5px;
+                        }
+                        .price {
+                            color: #626262;
+                            font-size: 20px;
+                            padding-bottom: 5px;
+                        }
+                        .check {
+                            padding-top: 5%;
+                        }
+                    }
+                }
+                .other_stuff {
+                    width: 100%;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    .call_now {
+                        text-align: left;
+                        color: #37d1ed;
+                    }
+                    .book_appo {
+                        text-align: left;
+                        color: #37d1ed;
+                    }
+                    .navigate {
+                        text-align: left;
+                        color: #45e3ca;
+                    }
+                }
+            }
+        }
+    }
+    .past_ser_footer {
+        margin: 0px;
+        padding: 0px;
+        .past_ser_btn {
+            padding: 0px;
+            margin: 0px;
+        }
+    }
+}

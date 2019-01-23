@@ -1,0 +1,28 @@
+<ion-header align-title="center">
+    <ion-navbar>
+        <button item-start ion-button icon-only color="white" menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Services</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content center>
+    <ion-grid class="container">
+        <ion-title>
+            <div class="title-heading">My Appoinment</div>
+        </ion-title>
+        <ion-row class="media-object" *ngFor="let service of data" attr.id="Service{{service.id}}">
+            <ion-row col-12 class="doctor-detail">
+                <ion-col col-3 class="img">
+                    <img src="assets/image/profile-image.jpg"/>
+                </ion-col>
+                <ion-col col-8 class="detail">
+                    <div class="row doctor_name">{{service.service_name}}</div>
+                    <div class="row qualification">{{service.category_name}}</div>
+                    <div class="row price">{{service.service_point}} Points</div>
+                </ion-col>
+            </ion-row>
+        </ion-row>
+    </ion-grid>
+</ion-content>

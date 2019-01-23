@@ -1,0 +1,49 @@
+<ion-header align-title="center">
+    <ion-navbar>
+        <button item-start ion-button icon-only color="white" menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Point</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div class="container">
+        <div class="row imgrow">
+            <div class="col imgcol">
+                <img src="assets/image/ticket.png" alt="Ticket">
+                <div class="total_point">
+                    {{totalpoint}}
+                    <span><br>points</span>
+                </div>
+            </div>
+        </div>
+        <div class="media_objects">
+            <ion-grid class="bill_panel" *ngFor="let pd of poitsdata">
+                <ion-row class="order_detail_row">
+                    <ion-col class="order_no">
+                        Order No.{{pd.id}}
+                    </ion-col>
+                    <ion-col class="time">
+                        {{pd.appointment_date}} {{pd.timeslote}}
+                    </ion-col>
+                </ion-row>
+                <ion-row class="detail">
+                    <ion-col col-3 class="img">
+                        <img src="assets/image/service.png" alt="assets/image/service.png">
+                    </ion-col>
+                    <ion-col col-6 class="name_detail">
+                        <span><h3>{{pd.service_name}}</h3></span>
+                        <br>
+                        <span class="category">{{pd.category_name}}</span>
+                    </ion-col>
+                    <ion-col col-3 class="point">
+                        <span class="pointlabel">Points<span>
+                            <br>{{pd.service_point}}</span>
+                        </span>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </div>
+    </div>
+</ion-content>

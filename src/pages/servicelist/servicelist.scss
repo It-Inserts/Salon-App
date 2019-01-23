@@ -1,0 +1,61 @@
+page-servicelist {
+    .toolbar-background-ios {
+        background: #fff;
+        border: none;
+    }
+    .scroll-content {
+        background: #000;
+        .container {
+            margin-top: 10px;
+            .media-object {
+                background: #fff;
+                margin-bottom: 10px;
+                .doctor-detail {
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    padding-bottom: 0px;
+                    border-bottom: 1px solid #e3ebf1;
+                    .img {
+                        padding-bottom: none;
+                        img {}
+                    }
+                    .detail {
+                        padding-left: 10px;
+                        .doctor_name {
+                            color: #7795a9;
+                        }
+                        .qualification {
+                            color: #a3b7c4;
+                        }
+                        .point {}
+                        .stuff {
+                            float: right;
+                            padding-right: 10px;
+                            div {
+                                display: block;
+                                text-align: right;
+                            }
+                        }
+                    }
+                }
+                .other_stuff {
+                    width: 100%;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    .call_now {
+                        text-align: left;
+                        color: #37d1ed;
+                    }
+                    .book_appo {
+                        text-align: left;
+                        color: #37d1ed;
+                    }
+                    .navigate {
+                        text-align: left;
+                        color: #45e3ca;
+                    }
+                }
+            }
+        }
+    }
+}
